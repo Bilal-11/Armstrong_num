@@ -31,5 +31,9 @@ int main()
 
     sum = 0;
   }
+
+  printf("\nPress ENTER key to Continue\n");
+  getchar();
+
   return 0;
 }

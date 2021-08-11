@@ -6,6 +6,7 @@ int main()
 {
   int num, digit, num_edit;
   int sum = 0;
+  printf("Armstrong numbers between 1 and 500:\n");
   for(num=1 ;num<=500; num++)
   {
     /*Extract the hundred's digit and add its cube to the sum of cubes of digits*/
@@ -23,7 +24,10 @@ int main()
     digit = num_edit;
     sum += digit * digit * digit;
 
-    printf("num=%d, sum=%d\n",num,sum);
+    /*Check if the sum of cube of digits of a number is same as the number.*/
+    /*If it is, then print that number*/
+    if(sum==num)
+      printf("%d\n",num);
 
     sum = 0;
   }
